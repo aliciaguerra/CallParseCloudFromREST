@@ -80,7 +80,7 @@ public class Driver {
 	private void lookupClaim() throws ParseException {
 		ParseQuery query = new ParseQuery("Claims");
 		query.addDescendingOrder("createdAt");
-		//query.whereEqualTo("claimNumber", iClaimNumber);
+		
 		try {
 			fileWriter = new FileWriter(ClaimNumbersFromParse);
 			bw = new BufferedWriter(fileWriter);
